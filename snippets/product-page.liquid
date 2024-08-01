@@ -947,21 +947,6 @@
                                                 %}
                                             </div>
 
- 
-                                            {% for variant in product.variants %}
-                                                <div class="list {% if product.selected_or_first_available_variant.id == variant.id %}active{% endif %}" data-variant="{{ variant.id }}">
-                                                  <!-- Existing variant details -->
-                                              
-                                                  {% if variant.metafields.custom.variant_special_offer != blank %}
-                                                    <p style="background-color:#DFEFF5; color:#000; padding: 10px">
-                                                      <b>Special Offer:</b> {{ variant.metafields.custom.variant_special_offer }}
-                                                    </p>
-                                                  {% endif %}
-                                                  
-                                                  <!-- Other variant details -->
-                                                </div>
-                                              {% endfor %}
-                                              
                                             
 
 
